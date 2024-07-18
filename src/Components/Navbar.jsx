@@ -6,6 +6,7 @@ import { useContext } from "react";
 import { CartContext } from "@/utils/ContextReducer";
 import { instance } from "@/utils/instence";
 import { CircleUserRound } from "lucide-react";
+
 import toast, { Toaster } from "react-hot-toast";
 const Navbar = () => {
   const [mount, setMount] = React.useState(false);
@@ -264,7 +265,7 @@ const Navbar = () => {
                     <li>
                       <Link href={"/login"}>
                         {" "}
-                        <PowerIcon /> Login
+                        Login
                       </Link>
                     </li>
                   )}
